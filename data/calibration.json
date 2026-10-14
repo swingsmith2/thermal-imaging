@@ -1,0 +1,39 @@
+{
+  "camera": "FLIR SC660",
+  "source_image": "IR_2412.jpg",
+  "source_note": "Thermimage inst/extdata/IR_2412.jpg, Glenn J. Tattersall",
+  "width": 640,
+  "height": 480,
+  "endian": "little",
+  "nuc_ffc": "already applied in the camera; raw values are radiometric ADC counts",
+  "emissivity": 0.949999988079071,
+  "distance_m": 1.0,
+  "reflected_c": 19.999993896484398,
+  "atmospheric_c": 19.999993896484398,
+  "window_c": 19.999993896484398,
+  "window_transmission": 1.0,
+  "humidity": 0.5,
+  "planck": {
+    "r1": 21106.76953125,
+    "b": 1501.0,
+    "f": 1.0,
+    "o": -7340.0,
+    "r2": 0.012545257806777954
+  },
+  "atmosphere": {
+    "alpha1": 0.006568999961018562,
+    "alpha2": 0.012620000168681145,
+    "beta1": -0.00227600010111928,
+    "beta2": -0.006670000031590462,
+    "x": 1.899999976158142
+  },
+  "reference": {
+    "x": 0,
+    "y": 0,
+    "raw": 18090,
+    "temperature_c": 23.73440586671677,
+    "source": "Published conversion of IR_2412.jpg pixel (0, 0)"
+  },
+  "raw_file": "frame_u16.raw",
+  "bad_pixel_file": "bad_pixels.csv"
+}

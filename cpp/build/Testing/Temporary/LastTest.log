@@ -1,0 +1,68 @@
+Start testing: Oct 14 20:11 CST
+----------------------------------------------------------
+1/1 Testing: production
+1/1 Test: production
+Command: "/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/thermal_production_test" "/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/.."
+Directory: /home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build
+"production" start time: Oct 14 20:11 CST
+Output:
+----------------------------------------------------------
+PASS load v1 calibration
+PASS migrate schema to 2
+PASS assign device serial
+PASS real frame pixel matches reference
+PASS push real counts
+PASS stage timing present
+PASS atomic save
+PASS load saved calibration
+PASS upgrade keeps software version
+PASS upgrade keeps calibration version
+PASS recover after power loss
+PASS discard partial ffc
+PASS detect bad pixels from blackbody
+PASS saturated pixels enter the bad-pixel table
+PASS two-point gain table
+PASS held-out blackbody within 2 C
+PASS gain table follows detector temperature
+PASS shutter frame freezes temperature
+PASS ffc bumps calibration version
+PASS published temperature held during ffc
+PASS debounce holds the first hot frame
+PASS alarm latches after debounce
+PASS ack during alarm does not clear a hot target
+PASS hysteresis clears the alarm
+PASS reflected temperature changes the reading
+PASS distance changes the reading
+PASS humidity changes the reading
+PASS emissivity changes the reading
+PASS full display queue drops preview frames
+PASS frame-id gap counts dropped frames
+PASS frame pool fills
+PASS frame pool refuses a fifth buffer
+PASS frame pool reuses a released buffer
+PASS freeze holds the last temperature
+PASS isotherm and level cover the held frame
+PASS big-endian samples are swapped
+PASS record raw
+PASS playback raw
+PASS playback keeps frame identity
+PASS stale temperature is detected
+PASS alarm register is set
+PASS modbus holding register
+PASS dry contact follows the alarm
+PASS mqtt publish payload
+PASS modbus tcp on localhost
+PASS preview stream connects
+PASS preview stream sends frame header
+PASS simulated one-hour drift stays within 2 C
+PASS 640x512 lut frame is under 50 ms
+failures 0
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"production" end time: Oct 14 20:11 CST
+"production" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 14 20:11 CST

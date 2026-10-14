@@ -35,9 +35,30 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python tests/test_pipeline.py
 python apps/run_demo.py
+python tests/test_recorded_frame.py
+python apps/run_recorded_frame.py
+bash scripts/ci.sh
 ```
 
-结果写在下面的报告里。完整单页版是 [output/report.html](output/report.html)，数字也在 `output/metrics.json`。
+合成场景的结果写在下面的报告里。完整单页版是 [output/report.html](output/report.html)，数字也在 `output/metrics.json`。
+
+真实帧不用再生成。`data/frame_u16.raw`、`data/bad_pixels.csv` 和 `data/calibration.json` 已经从 FLIR SC660 样张拆好。样张原件是 `data/IR_2412.jpg`（Thermimage 示例，Glenn J. Tattersall）。
+
+## 真实 16 bit 帧
+
+这张 640×480 帧的两点校正和快门校正已经在机芯里做完，原始值是辐射计数值，不是温度。坏点表是外部文件；这张图没有 0 或 65535 的饱和点，所以表是空的。标定文件保存普朗克常数、发射率、反射温度、距离、湿度和大气系数。
+
+参考温度只覆盖像素 (0, 0)：公开换算结果 **23.7344°C**。同一条读取链解出 **23.7344°C**，误差 **-0.00000°C**。把发射率从 0.95 改成 0.50，这个像素变成 **26.97°C**，误差 **+3.24°C**。全图约 22.7°C 到 35.3°C，没有整幅黑体真值，不能把全图误差说成 0。
+
+![真实帧测温](output/recorded/temperature.png)
+
+## 生产路径
+
+设备软件在 `cpp/`。`bash scripts/ci.sh` 会跑 Python 回归和 C++ 生产测试。结果在 `output/production/report.json`。
+
+这次验收用的是合成黑体，不是实验室黑体。35°C 留出点测得 34.96°C，误差 -0.04°C，门限是 ±2°C。真实样张像素 (0, 0) 误差约 0。模拟 3600 秒漂移的最大误差 0.04°C。640×512 查表一帧约 1.6 ms。
+
+发布说明和已知限制在 [RELEASE.md](RELEASE.md)。
 
 ## 报告
 

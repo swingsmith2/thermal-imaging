@@ -1,0 +1,5 @@
+/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/CMakeFiles/thermal_device.dir
+/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/CMakeFiles/thermal_production_test.dir
+/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/CMakeFiles/test.dir
+/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/WorkSpace/Embedded/thermal-imaging-demo/cpp/build/CMakeFiles/rebuild_cache.dir

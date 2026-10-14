@@ -1,0 +1,17 @@
+# ninja log v6
+1	1016	1791979763284376182	CMakeFiles/thermal_device.dir/src/device.cpp.o	3edc8b969c95f89c
+1016	1031	1791979764294383040	libthermal_device.a	a57cbf3a8e0ed335
+1	1233	1791979763284376182	CMakeFiles/thermal_production_test.dir/src/production_test.cpp.o	5230fce39c69bca
+1233	1333	1791979764514384538	thermal_production_test	397c29887a53379c
+1	875	1791979799614493137	CMakeFiles/thermal_device.dir/src/device.cpp.o	3edc8b969c95f89c
+875	886	1791979800484494269	libthermal_device.a	a57cbf3a8e0ed335
+1	1152	1791979799614493137	CMakeFiles/thermal_production_test.dir/src/production_test.cpp.o	5230fce39c69bca
+1152	1248	1791979800764494636	thermal_production_test	397c29887a53379c
+1	1093	1791979839074496628	CMakeFiles/thermal_production_test.dir/src/production_test.cpp.o	5230fce39c69bca
+1093	1193	1791979840174498076	thermal_production_test	397c29887a53379c
+0	893	1791979878164495059	CMakeFiles/thermal_device.dir/src/device.cpp.o	3edc8b969c95f89c
+893	903	1791979879064494162	libthermal_device.a	a57cbf3a8e0ed335
+1	1200	1791979878164495059	CMakeFiles/thermal_production_test.dir/src/production_test.cpp.o	5230fce39c69bca
+1200	1313	1791979879364494352	thermal_production_test	397c29887a53379c
+1	1176	1791979888184489353	CMakeFiles/thermal_production_test.dir/src/production_test.cpp.o	5230fce39c69bca
+1176	1273	1791979889354489864	thermal_production_test	397c29887a53379c
